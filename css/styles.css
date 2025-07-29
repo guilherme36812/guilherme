@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    font-size: 20p;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+    padding: 1rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+#Logo {
+    height: 20vh
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 80vw;
+}
+
+.menu>li {
+    list-style-type: none;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(~0, 0, 0, 0.5);
+}
