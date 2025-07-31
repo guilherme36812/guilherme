@@ -4,7 +4,6 @@ body {
     width: 100vw;
     min-height: 100vh;
     background-color: rgb(247, 218, 165);
-
 }
 
 header {
@@ -18,6 +17,7 @@ header {
     padding: 1rem;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     z-index: 100;
+    height: 20vh;
 }
 
 #Logo {
@@ -28,7 +28,8 @@ header {
     display: flex;
     justify-content: space-evenly;
     min-width: 80vw;
-
+    padding: 0;
+    margin: 0;
 }
 
 .menu>li {
@@ -42,22 +43,98 @@ header {
 
 }
 
-main {
+.background {
     background-image: url(../images/saiba-escolher-a-melhor-imobiliaria.png);
     width: 100%;
-    height: 91vh;
+    height: 80vh;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
 }
 
+.background h1 {
+    position: relative;
+    top: 30%;
+    left: 20%;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+}
+
+main {
+    text-align: center;
+    padding: 4rem;
+}
+
+main>h1 {
+    font-size: 4rem;
+}
+
+/* Carousel */
+
 #carouselExampleCaptions {
-    margin: 10rem auto;
+    margin: 5rem auto;
     height: 80vh;
     width: 80vw;
+    color: rgb(0, 0, 0);
 }
 
 .carousel-item img {
     height: 80vh;
     object-position: center;
     object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+/* Cards */
+
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin: 15px;
+    font-size: 1.5em;
+}
+
+.card p {
+    margin: 15px 15px 15px 15px;
+    color: #555;
+}
+
+main {
+    text-align: center;
+    padding: 4rem;
+}
+
+main>h1 {
+    font-size: 4rem;
 }
