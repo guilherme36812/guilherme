@@ -80,8 +80,10 @@ main>h1 {
 
 .carousel-item img {
     height: 80vh;
+    width: auto;
     object-position: center;
     object-fit: contain;
+    margin: 0 auto;
 }
 
 .carousel-control-prev-icon,
@@ -146,4 +148,93 @@ main {
 
 main>h1 {
     font-size: 4rem;
+}
+
+#carousel-caption {
+    margin: 5rem auto;
+    height: 80vh;
+    width: 80vw;
+    color: rgb(0, 0, 0);
+}
+
+.carousel-item img {
+    height: 80vh;
+    object-position: center;
+    object-fit: contain;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+.carousel-caption {
+    text-shadow: 3px 3px 3px black;
+}
+
+/* Botão hamburger */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 110;
+    color: black;
+}
+
+/* Menu lateral escondido por padrão em telas pequenas */
+@media (max-width: 750px) {
+    main {
+        padding: 0;
+    }
+
+    main>h1 {
+        margin-top: 1rem;
+        font-size: 3rem;
+    }
+
+    .menu {
+        flex-direction: column;
+        background-color: white;
+        position: fixed;
+        top: 0px;
+        left: -100%;
+        height: 100vh;
+        width: 150px;
+        padding-top: 4rem;
+        transition: left 0.3s ease;
+        z-index: 105;
+        min-width: 0;
+        justify-content: flex-start;
+    }
+
+    .menu.show {
+        left: 0;
+    }
+
+    .menu>li {
+        margin-top: 4rem;
+        text-align: left;
+        padding-left: 2rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #carouselExampleCaptions {
+        margin: 0 auto;
+        height: 50vh;
+    }
+
+    .carousel-item img {
+        height: 50vh;
+    }
+
 }

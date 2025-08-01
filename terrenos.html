@@ -14,17 +14,20 @@
     <header>
         <img id="Logo" src="./images/pngtree-aj-letter-logo-with-creative-modern-business-vector-png-image_14441368.png"
             alt="">
-        <ul class="menu">
-            <li> <a href="./index.html">Ínicio</a></li>
-            <li> <a href="./casas.html">Casas</a></li>
-            <li> <a href="./apartamento.html">Apartamentos</a></li>
-            <li> <a href="./terrenos.html">Terrenos</a></li>
+        <button class="hamburger d-lg-none" id="hamburger">
+            &#9776;
+        </button>
+
+        <ul class="menu" id="menu">
+            <li><a href="./index.html">Ínicio</a></li>
+            <li><a href="./casas.html">Casas</a></li>
+            <li><a href="./apartamento.html">Apartamentos</a></li>
+            <li><a href="./terrenos.html">Terrenos</a></li>
         </ul>
     </header>
     <main>
         <h1>Terrenos</h1>
     </main>
-
     <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -36,24 +39,32 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./images/OIP (3).webp" class="d-block w-100" alt="...">
+                <img src="./images/OIP (3).webp" class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Terreno no Porto</h5>
                     <p>50 000$.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/OIP (4).webp" class="d-block w-100" alt="...">
+                <img src="./images/OIP (4).webp" class="d-block" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Terreno em Beja</h5>
+                    <p>30 000$</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./images/01.webp" class="d-block" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Terreno em Caminha</h5>
                     <p>40 000$</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./images/IDdfc86001-0000-0500-0000-000010a07b3d.jpg" class="d-block w-100" alt="...">
+                <img src="./images/pt_news_03.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Terreno em Caminha</h5>
-                    <p>30 000$</p>
+                    <p>20 000$</p>
                 </div>
             </div>
         </div>
@@ -68,6 +79,8 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+    <script src="./js/menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
         </script>
